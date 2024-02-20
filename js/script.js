@@ -1,6 +1,6 @@
 var gc = new GameCanvas();
 
-var points = textToPoints("守护蔚蓝，经略空天", 20, "Anton");
+var points = textToPoints("守护蔚蓝，经略空天", 15, "Anton");
 
 
 var titleParticles = [];
@@ -85,7 +85,7 @@ function TitleParticle(x, y, vx, vy) {
   }
 
   this.render = function () {
-    circle(this.x, this.y, this.radius, "rgba(255, 255, 255, " + (this.health / this.maxHealth) + ")");
+    circle(this.x, this.y, this.radius, "rgba(0, 128, 255, " + (this.health / this.maxHealth) + ")");
   }
 }
 
